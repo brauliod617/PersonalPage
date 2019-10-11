@@ -17,9 +17,8 @@ Description:   This page is the landing page for all my future assignments. Work
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
     <body>
-
         <!--NavBar-->
-        <nav class="navBar">
+        <nav id="navBar">
             <a href="#aboutMeDiv">About Me</a>
             <a href="#AssignmentsLink">Assignments</a>
 <!--            <a href="index.html" id="logoA"><img src="Images/Mylogo.png" id="myLogo"></a>-->
@@ -27,11 +26,10 @@ Description:   This page is the landing page for all my future assignments. Work
             <a href="#ContactLink">Contact</a>
             <a href="#Portfolio" >Portfolio</a>
         </nav>
-        <!--End of NavBar-->
-        <!--Crow for Background-->
-        <h1 class="bg center">BRAULIO</h1>
-        <img id="grauna" src="Images/grauna-removebg-preview.png">
-        <!--End of Crow for Background-->
+        <!--Background-->
+        <div id="braulio">
+            <h1 class="bg center">BRAULIO</h1>
+        </div>
         <!--About Me-->
         <div id="aboutMeDiv">
             <div id="aboutMeDivTop">
@@ -54,7 +52,10 @@ Description:   This page is the landing page for all my future assignments. Work
                 <h4 class="left ">@Capoeira Rosa Rubra</h4>
             </div>
         </div>
-        <!--End of AboutMe-->
+        <!--Back to top button-->
+        <div id="topButton">
+            <a href="#navBar"><img src="Images/UpArrows.png"></a>
+        </div>
         <!--Assignments-->
         <div id="Assignments">
             <a name="AssignmentsLink"></a>
@@ -74,7 +75,6 @@ Description:   This page is the landing page for all my future assignments. Work
                     </div>
             </div>
         </div>
-        <!--End of Assignments-->
         <!--Contact-->
         <div id="Contact">
             <a name="ContactLink"></a>
@@ -94,12 +94,14 @@ Description:   This page is the landing page for all my future assignments. Work
                 </form>
             </div>
         </div>
-        <!--End ofContact-->
         <div id="Portfolio">
             <a name="PortfolioLink"></a>
             <img class="center" id="underConstructionImage" src="images/PinClipart.com_under-construction-sign-clip_1369172.png"
                  alt="Under Construction Image">
         </div>
+
+        <!--My JS files-->
+        <script src="main.js" type="text/javascript" rel="script"></script>
         <footer>
             <div>
                 <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a>

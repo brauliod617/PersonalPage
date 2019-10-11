@@ -12,30 +12,26 @@ body{
     background-repeat: no-repeat;
     background-size: initial;
     background-color: #40b2e6;
+    min-width: 900px;
 }
-#grauna{
-    z-index: -1;
-    position: absolute;
-    left: 34%;
-    top: 24.7%;
-}
-bg{
+
+.bg{
     margin: 96px;
 }
 /*end of Background Image*/
 
 /*Navbar*/
-.navBar{
+#navBar{
     display: flex;
 }
 /*navBar is direct parent of a*/
 /*navbar items*/
-.navBar > a{
+#navBar > a{
     margin: auto;
     text-decoration: none;
     color: black;
 }
-.navBar > a:hover {
+#navBar > a:hover {
     color: #40b2e6;
 }
 #myLogo{
@@ -47,11 +43,26 @@ bg{
 }
 /*End Navbar*/
 
+/*TopButton*/
+#topButton  img{
+    width: 80px;
+
+
+}
+#topButton{
+    position: fixed;
+    left: 92%;
+    top: 90%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+/*End of TopButton*/
 
 
 /*Shared*/
 body{
-
+    overflow-x: hidden;
 }
 html {
     font-family: 'Roboto', sans-serif;
@@ -184,14 +195,16 @@ a:hover .assignmentImg{
     top: 2600px;
 }
 
+
+
 /*Footer*/
 footer {
-    text-align: center;
+    text-align: right;
     position: absolute;
     bottom: 0;
     top: 2940px;
     width: 100%;
-    left: 400px;
+    margin-right: 20px;
 }
 .fLogos{
     height: 30px;

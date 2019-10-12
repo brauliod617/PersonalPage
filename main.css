@@ -6,67 +6,17 @@
 /*Date created:  09-15-2019*/
 /*Last Modified: 10-10-2019*/
 /*Description:   This page is the landing page for all my future assignments. Work in progress.*/
+
 /*Background*/
 body{
-    background-image: url("Images/BraulioBlueWhiteBG.png");
-    background-repeat: no-repeat;
+    background-image: url("Images/low-poly-texture-85.png");
     background-size: initial;
     background-color: #40b2e6;
-    min-width: 900px;
 }
 
 .bg{
     margin: 96px;
 }
-/*end of Background Image*/
-
-/*Navbar*/
-#navBar{
-    display: flex;
-    margin-top: 10px;
-}
-/*navBar is direct parent of a*/
-/*navbar items*/
-#navBar > a{
-    margin: auto;
-    text-decoration: none;
-    color: black;
-}
-#navBar > a:hover {
-    color: #40b2e6;
-}
-#myLogo{
-    width: 100%;
-}
-/*a which is parent of logo image.*/
-#logoA{
-    width: 65px;
-}
-/*End Navbar*/
-
-/*Side Bar*/
-.sideBar{
-    display: inline-block;
-}
-
-/*End of Side Bar*/
-
-/*TopButton*/
-#topButton  img{
-    width: 80px;
-
-
-}
-#topButton{
-    position: fixed;
-    left: 92%;
-    top: 90%;
-    z-index: 1;
-    visibility: hidden;
-}
-
-/*End of TopButton*/
-
 
 /*Shared*/
 body{
@@ -78,23 +28,98 @@ html {
 h1{/*BRAULIO background*/
     font-size: 120px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .center{
-     text-align: center;
- }
-/*EndShared*/
+    text-align: center;
+}
+
+/*Landing page*/
+#landingPage > p{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20% 20% 7% 20%;
+    color: #000;
+}
+.blue{
+    color: #1a00dd;
+}
+#vmwBtn{
+    border: 2px groove;
+    width: 190px;
+    padding: 20px 14px 20px 32px;
+    margin: auto;
+    border-radius: 20px;
+}
+#vmwBtn:hover{
+    background-color: #32314252;
+    border-color: black;
+    border-width: 3px;
+}
+
+/*Navbar*/
+#navBar{
+    display: flex;
+    margin-top: 10px;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    background-color: #697088;
+    left: 0px;
+    height: 36px;
+    margin-top: 0px;
+
+}
+/*navbar items, navBar is direct parent of a*/
+#navBar > a{
+    margin: auto;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+#navBar > a:hover {
+    color: #40b2e6;
+}
+#myLogo{
+    width: 100%;
+}
+#logoA{/*a which is parent of logo image.*/
+    width: 65px;
+}
+
+/*Side Bar*/
+.sideBar{
+    display: inline-block;
+}
+
+/*TopButton*/
+#topButton  img{
+    width: 80px;
+}
+#topButton{
+    position: fixed;
+    left: 92%;
+    top: 90%;
+    z-index: 1;
+    visibility: hidden;
+}
 
 /*About Me*/
 #aboutMeDiv{
     position: absolute;
-    top: 789px;
+    top: 100%;
     left: 0px;
-
+    width: 100%;
 }
 #aboutMeDivTop{
     background-color: white;
     padding-bottom: 30px;
 
-    min-width: 768px;
+
     margin-top: -18px;
 }
 #aboutMeDivTop > p{
@@ -122,12 +147,10 @@ h1{/*BRAULIO background*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/*End About Me*/
-
 /*Assignments*/
 #Assignments{
     position: absolute;
-    top: 1708px;
+    top: 200%;
     min-width: 900px;
     right: 0;
     left: 0;
@@ -176,8 +199,8 @@ a:hover .assignmentImg{
 
 /*Contact*/
 #Contact{
-    top: 2300px;
-    position: relative;
+    position: absolute;
+    top: 300%;
 }
 #form{
     border: 1px solid #33363b;
@@ -199,8 +222,8 @@ a:hover .assignmentImg{
 
 /*Portfolio*/
 #Portfolio{
-    position: relative;
-    top: 2600px;
+    position: absolute;
+    top: 400%;
 }
 #Portfolio > img{
     width: 80%;

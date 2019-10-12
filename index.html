@@ -18,6 +18,7 @@ Description:   This page is the landing page for all my future assignments. Work
 </head>
     <body>
         <!--NavBar-->
+        <div id="top" style="position: absolute; top: 0"></div>
         <nav id="navBar">
             <a href="#aboutMeDiv">About Me</a>
             <a href="#AssignmentsLink">Assignments</a>
@@ -27,14 +28,9 @@ Description:   This page is the landing page for all my future assignments. Work
             <a href="#Portfolio" >Portfolio</a>
         </nav>
         <!--Background-->
-        <div id="braulio">
-            <h1 class="bg center">BRAULIO</h1>
-        </div>
-        <!--Side Bar-->
-        <div class="sideBar">
-            <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a>
-            <a href="https://www.linkedin.com/in/brauliod617/" target="_blank"><img class="fLogos" src="images/linkedin-icon-png-16.png" alt="LinkedIn Logo"></a>
-            &copy; 2019 Braulio Duarte
+        <div id="landingPage">
+            <p>Hello World I'm <span class="blue">Braulio Duarte</span>,<br> I am a Computer Science student</p>
+            <a href="#aboutMeDiv"><h2 id="vmwBtn">View My Work &nbsp;<i id="arrow" class="fas fa-arrow-right"></i></h2></a>
         </div>
         <!--About Me-->
         <div id="aboutMeDiv">
@@ -60,7 +56,7 @@ Description:   This page is the landing page for all my future assignments. Work
         </div>
         <!--Back to top button-->
         <div id="topButton">
-            <a href="#navBar"><img src="Images/UpArrows.png"></a>
+            <a href="#top"><img src="Images/UpArrows.png"></a>
         </div>
         <!--Assignments-->
         <div id="Assignments">
@@ -81,6 +77,13 @@ Description:   This page is the landing page for all my future assignments. Work
                     </div>
             </div>
         </div>
+        <!--Portfolio-->
+        <div id="Portfolio">
+            <h1 class="center" >Portfolio</h1>
+            <a name="PortfolioLink"></a>
+            <img class="center" id="underConstructionImage" src="images/PinClipart.com_under-construction-sign-clip_1369172.png"
+                 alt="Under Construction Image">
+        </div>
         <!--Contact-->
         <div id="Contact">
             <a name="ContactLink"></a>
@@ -100,22 +103,29 @@ Description:   This page is the landing page for all my future assignments. Work
                 </form>
             </div>
         </div>
-        <div id="Portfolio">
-            <h1 class="center" >Portfolio</h1>
-            <a name="PortfolioLink"></a>
-            <img class="center" id="underConstructionImage" src="images/PinClipart.com_under-construction-sign-clip_1369172.png"
-                 alt="Under Construction Image">
-        </div>
+
 
         <!--My JS files-->
         <script src="main.js" type="text/javascript" rel="script"></script>
         <footer>
-<!--            <div>-->
-<!--                <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a>-->
-<!--                <a href="https://www.linkedin.com/in/brauliod617/" target="_blank"><img class="fLogos" src="images/linkedin-icon-png-16.png" alt="LinkedIn Logo"></a>-->
-<!--            </div>-->
+            <div>
+                <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a>
+                <a href="https://www.linkedin.com/in/brauliod617/" target="_blank"><img class="fLogos" src="images/linkedin-icon-png-16.png" alt="LinkedIn Logo"></a>
+            </div>
 
         </footer>
         <script src="https://kit.fontawesome.com/72535e3116.js"></script>
     </body>
 </html>
+
+<!--Sources-->
+<!--Background Image: http://www.roundedhexagon.com/texture/polygonal-low-poly-85/-->
+<!--Icons: https://fontawesome.com-->
+<!--Font: https://fonts.google.com/-->
+
+<!--Side Bar-->
+<!--        <div class="sideBar">-->
+<!--            <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a>-->
+<!--            <a href="https://www.linkedin.com/in/brauliod617/" target="_blank"><img class="fLogos" src="images/linkedin-icon-png-16.png" alt="LinkedIn Logo"></a>-->
+<!--            &copy; 2019 Braulio Duarte-->
+<!--        </div>-->

@@ -23,6 +23,7 @@ body{
 /*Navbar*/
 #navBar{
     display: flex;
+    margin-top: 10px;
 }
 /*navBar is direct parent of a*/
 /*navbar items*/
@@ -42,6 +43,13 @@ body{
     width: 65px;
 }
 /*End Navbar*/
+
+/*Side Bar*/
+.sideBar{
+    display: inline-block;
+}
+
+/*End of Side Bar*/
 
 /*TopButton*/
 #topButton  img{
@@ -194,7 +202,10 @@ a:hover .assignmentImg{
     position: relative;
     top: 2600px;
 }
-
+#Portfolio > img{
+    width: 80%;
+}
+/*End of Portfolio*/
 
 
 /*Footer*/

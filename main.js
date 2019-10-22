@@ -2,42 +2,35 @@ button = document.getElementById("topButton");
 navBar = document.getElementById("navBar");
 vmwBtn = document.getElementById("vmwBtn");
 arrow = document.getElementById("arrow");
-console.log("Hello");
+sideBar = document.getElementById("sideBar");
 
+
+
+// Change the arrow of view my work button from right arrow to down arrow on mouse over
 vmwBtn.addEventListener("mouseover", function () {
-    console.log("We here");
-    arrow.classList.add("fas");
     arrow.classList.add("fa-arrow-down");
     arrow.classList.remove("fa-arrow-right");
 
 });
 
+// Change the arrow of view my work button from down arrow to right arrow on mouse out
 vmwBtn.addEventListener("mouseout", function () {
-    console.log("We out");
     arrow.classList.remove("fa-arrow-down");
     arrow.classList.add("fa-arrow-right");
 
 });
 
-vmwBtn.addEventListener("click", function () {
-    let item = document.getElementById("aboutMeDiv");
-    let wrapper = document.getElementsByTagName("BODY")[0];
-    let count = item.offsetTop - wrapper.scrollTop;
-    console.log(count);
-    wrapper.scrollBy({top: count, left: 0, behavior: "smooth"});
-    console.log("We Down");
 
-});
-
-//Used to make nav bar and scroll to top button appear once user scrolls past landing page
+//Used to make nav bar, side bar and scroll to top button appear once user scrolls past landing page
 window.addEventListener("scroll", function() {
     let elementTarget = document.getElementById("aboutMeDiv");
     if(window.scrollY > (elementTarget.offsetHeight)){
         button.style.visibility = "visible";
-        navBar.style.visibility = "visible";
-        console.log("VISIBLE");
+        // navBar.style.visibility = "visible";
+        sideBar.style.visibility = "visible";
     }else{
         button.style.visibility = "hidden";
-        navBar.style.visibility = "hidden";
+        // navBar.style.visibility = "hidden";
+        sideBar.style.visibility = "hidden";
     }
 });

@@ -11,7 +11,7 @@
 body{
     background-image: url("Images/low-poly-texture-85.png");
     background-size: initial;
-    background-color: #40b2e6;
+    margin: 0;
 }
 
 .bg{
@@ -35,65 +35,24 @@ a{
 .center{
     text-align: center;
 }
-
-/*Landing page*/
-#landingPage > p{
-    text-align: center;
-    font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
-    margin: 20% 20% 7% 20%;
-    color: #000;
-}
-.blue{
-    color: #1a00dd;
-}
-#vmwBtn{
-    border: 2px groove;
-    width: 190px;
-    padding: 20px 14px 20px 32px;
-    margin: auto;
-    border-radius: 20px;
-}
-#vmwBtn:hover{
-    background-color: #32314252;
-    border-color: black;
-    border-width: 3px;
+.container-override{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/*Navbar*/
-#navBar{
-    display: flex;
-    margin-top: 10px;
-    visibility: hidden;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-    background-color: #697088;
-    left: 0px;
-    height: 36px;
-    margin-top: 0px;
 
-}
-/*navbar items, navBar is direct parent of a*/
-#navBar > a{
-    margin: auto;
-    text-decoration: none;
-    color: #e5e7eb;
-}
-#navBar > a:hover {
-    color: #40b2e6;
-}
-#myLogo{
-    width: 100%;
-}
-#logoA{/*a which is parent of logo image.*/
-    width: 65px;
-}
+
 
 /*Side Bar*/
-.sideBar{
+#sideBar{
     display: inline-block;
+    position: fixed;
+    top: 87%;
+    z-index: 1;
+    margin: 20px;
+    visibility: hidden;
 }
 
 /*TopButton*/
@@ -107,19 +66,44 @@ a{
     z-index: 1;
     visibility: hidden;
 }
-
+/*Landing page*/
+#landingPage{
+    height: 75vh;
+}
+#landingPage > p{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20% 20% 7% 20%;
+    color: #000;
+}
+.blue{
+    color: #1a00dd;
+}
+#vmwBtn{
+    border: 2px groove;
+    width: 302px;
+    padding: 20px 14px 20px 32px;
+    margin: auto;
+    border-radius: 20px;
+}
+#vmwBtn:hover{
+    background-color: #32314252;
+    border-color: black;
+    border-width: 3px;
+}
 /*About Me*/
 #aboutMeDiv{
-    position: absolute;
     top: 100%;
-    left: 0px;
+    left: 0;
     width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-top: 80px;
 }
 #aboutMeDivTop{
-    background-color: white;
+    background-color: #ffffff;
     padding-bottom: 30px;
-
-
     margin-top: -18px;
 }
 #aboutMeDivTop > p{
@@ -149,11 +133,12 @@ a{
 }
 /*Assignments*/
 #Assignments{
-    position: absolute;
-    top: 200%;
-    min-width: 900px;
+    background-color: white;
+    width: 100%;
     right: 0;
     left: 0;
+    height: 100vh;
+    padding-top: 80px;
 }
 .assignmentImg{
     width: 58%;
@@ -199,8 +184,9 @@ a:hover .assignmentImg{
 
 /*Contact*/
 #Contact{
-    position: absolute;
     top: 300%;
+    height: 100vh;
+    margin-top: 80px;
 }
 #form{
     border: 1px solid #33363b;
@@ -222,8 +208,9 @@ a:hover .assignmentImg{
 
 /*Portfolio*/
 #Portfolio{
-    position: absolute;
     top: 400%;
+    height: 100vh;
+    margin-top: 80px;
 }
 #Portfolio > img{
     width: 80%;
@@ -243,3 +230,31 @@ footer {
 .fLogos{
     height: 30px;
 }
+
+/*!*Navbar*!*/
+/*#navBar{*/
+/*    display: flex;*/
+/*    margin-top: 10px;*/
+/*    !*visibility: hidden;*!*/
+/*    background-color: #697088;*/
+/*    height: 36px;*/
+/*    z-index: 1;*/
+/*}*/
+/*!*navbar items, navBar is direct parent of a*!*/
+/*#navBar > a{*/
+/*    margin: auto;*/
+/*    text-decoration: none;*/
+/*    color: #e5e7eb;*/
+/*}*/
+/*#navBar > a:hover {*/
+/*    color: #40b2e6;*/
+/*}*/
+/*#myLogo{*/
+/*    width: 100%;*/
+/*}*/
+/*#logoA{!*a which is parent of logo image.*!*/
+/*    width: 65px;*/
+/*}*/
+/*#navBarContainer{*/
+/*    z-index: 2;*/
+/*}*/

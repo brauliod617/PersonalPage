@@ -17,21 +17,26 @@ Description:   This page is the landing page for all my future assignments. Work
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
     <body>
-        <!--NavBar-->
-        <div id="top" style="position: absolute; top: 0"></div>
-        <nav id="navBar">
-            <a href="#aboutMeDiv">About Me</a>
-            <a href="#AssignmentsLink">Assignments</a>
-<!--            <a href="index.html" id="logoA"><img src="Images/Mylogo.png" id="myLogo"></a>-->
-            <a href="index.html" id="logo"><i class="fas fa-crow"></i></a>
-            <a href="#ContactLink">Contact</a>
-            <a href="#Portfolio" >Portfolio</a>
-        </nav>
-        <!--Background-->
+        <div class="container-fluid container-override" style="padding: 0">
+        <!--Landing Page-->
         <div id="landingPage">
             <p>Hello World I'm <span class="blue">Braulio Duarte</span>,<br> I am a Computer Science student</p>
             <a href="#aboutMeDiv"><h2 id="vmwBtn">View My Work &nbsp;<i id="arrow" class="fas fa-arrow-right"></i></h2></a>
         </div>
+        <!--Side Bar-->
+        <div id="sideBar">
+            <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a> <br>
+            <a href="https://www.linkedin.com/in/brauliod617/" target="_blank"><img class="fLogos" src="images/linkedin-icon-png-16.png" alt="LinkedIn Logo"></a>
+
+        </div>
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #697088; font-size: 18pt">
+            <a class="nav-item nav-link mx-auto text-light"  href="#aboutMeDiv">About Me</a>
+            <a class="nav-item nav-link mx-auto text-light" href="#AssignmentsLink">Assignments</a>
+            <a class="nav-item nav-link mx-auto text-light" href="index.html" id="logo"><i class="fas fa-crow"></i></a>
+            <a class="nav-item nav-link mx-auto text-light" href="#ContactLink">Contact</a>
+            <a class="nav-item nav-link mx-auto text-light" href="#Portfolio" >Portfolio</a >
+        </nav>
         <!--About Me-->
         <div id="aboutMeDiv">
             <div id="aboutMeDivTop">
@@ -60,7 +65,6 @@ Description:   This page is the landing page for all my future assignments. Work
         </div>
         <!--Assignments-->
         <div id="Assignments">
-            <a name="AssignmentsLink"></a>
             <h1><i class="fas fa-crow"></i>ASSIGNMENTS</h1>
             <div class="row">
                     <div>
@@ -103,23 +107,33 @@ Description:   This page is the landing page for all my future assignments. Work
                 </form>
             </div>
         </div>
-
-
         <!--My JS files-->
         <script src="main.js" type="text/javascript" rel="script"></script>
         <footer>
-            <div>
-                <a class="fLogos" href="https://github.com/brauliod617" target="_blank"><img class="fLogos" src="images/github_PNG83.png" alt="Github Logo"></a>
-                <a href="https://www.linkedin.com/in/brauliod617/" target="_blank"><img class="fLogos" src="images/linkedin-icon-png-16.png" alt="LinkedIn Logo"></a>
-            </div>
-
+            &copy; 2019 Braulio Duarte
         </footer>
+        </div>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/72535e3116.js"></script>
     </body>
 </html>
 
+<!--NavBar-->
+<!--        <div id="top" style="position: absolute; top: 0"></div>-->
+<!--        <div id="navBarContainer">-->
+<!--            <nav id="navBar">-->
+<!--                <a href="#aboutMeDiv">About Me</a>-->
+<!--                <a href="#AssignmentsLink">Assignments</a>-->
+<!--                &lt;!&ndash;            <a href="index.html" id="logoA"><img src="Images/Mylogo.png" id="myLogo"></a>&ndash;&gt;-->
+<!--                <a href="index.html" id="logo"><i class="fas fa-crow"></i></a>-->
+<!--                <a href="#ContactLink">Contact</a>-->
+<!--                <a href="#Portfolio" >Portfolio</a>-->
+<!--            </nav>-->
+<!--        </div>-->                                                                                    ˝
+
 <!--Sources-->
 <!--Background Image: http://www.roundedhexagon.com/texture/polygonal-low-poly-85/-->
+<!--Background Image: https://unsplash.com/photos/5eBW5GomfhY -->
 <!--Icons: https://fontawesome.com-->
 <!--Font: https://fonts.google.com/-->
 

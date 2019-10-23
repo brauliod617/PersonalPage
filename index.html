@@ -30,12 +30,11 @@ Description:   This page is the landing page for all my future assignments. Work
 
         </div>
         <!--Nav Bar-->
-        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #697088; font-size: 18pt">
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #000000; font-size: 18pt">
             <a class="nav-item nav-link mx-auto text-light"  href="#aboutMeDiv">About Me</a>
-            <a class="nav-item nav-link mx-auto text-light" href="#AssignmentsLink">Assignments</a>
+            <a class="nav-item nav-link mx-auto text-light" href="#Assignments">Assignments</a>
             <a class="nav-item nav-link mx-auto text-light" href="index.html" id="logo"><i class="fas fa-crow"></i></a>
             <a class="nav-item nav-link mx-auto text-light" href="#ContactLink">Contact</a>
-            <a class="nav-item nav-link mx-auto text-light" href="#Portfolio" >Portfolio</a >
         </nav>
         <!--About Me-->
         <div id="aboutMeDiv">
@@ -65,45 +64,41 @@ Description:   This page is the landing page for all my future assignments. Work
         </div>
         <!--Assignments-->
         <div id="Assignments">
-            <h1><i class="fas fa-crow"></i>ASSIGNMENTS</h1>
-            <div class="row">
-                    <div>
+            <h1>ASSIGNMENTS</h1>
+            <div class="row myRow">
+                    <div class="col col-3 offset-3">
                         <h4>Assignment 2 Create HomePage</h4>
-                        <a class="col" href="Pages/Assignments/Assignment2/public_html/index.html" target="_blank">
+                        <a href="Pages/Assignments/Assignment2/public_html/index.html" target="_blank">
                             <img class ="assignmentImg" src="images/Homepage.png" alt="Pacific Trail Resort main page screen shot">
                         </a>
                     </div>
-                    <div >
-                        <h4>Assignment 3 Pacific Trail Resorts CSS Assignment</h4>
-                        <a class="col" href="Pages/Assignments/Assignment3/HW3_sourceCode/index.html" target="_blank">
+                    <div class="col col-3" >
+                        <h4>Assignment 3 CSS Assignment</h4>
+                        <a href="Pages/Assignments/Assignment3/HW3_sourceCode/index.html" target="_blank">
                             <img class ="assignmentImg" src="images/PacificTrailResort.png" alt="Pacific Trail Resort main page screen shot">
                         </a>
                     </div>
             </div>
-        </div>
-        <!--Portfolio-->
-        <div id="Portfolio">
-            <h1 class="center" >Portfolio</h1>
-            <a name="PortfolioLink"></a>
-            <img class="center" id="underConstructionImage" src="images/PinClipart.com_under-construction-sign-clip_1369172.png"
-                 alt="Under Construction Image">
         </div>
         <!--Contact-->
         <div id="Contact">
             <a name="ContactLink"></a>
             <div class ="topSectionContact">
                 <h2 class="center">Have any questions, feel free to contact me!</h2>
-                <form id="form" class="center">
-                    First Name:<br>
-                    <input class="formItem" type="text" name="firstName">
-                    <br>
-                    Last Name:<br>
-                    <input class="formItem" type="text" name="lastName">
-                    <br>
-                    Message:<br>
-                    <textarea class="textArea formItem" name="textArea"></textarea>
-                    <!--        <input class="formItem formMessage"  type="text" name="Message">-->
-                    <input id="input" type="submit" value="Submit">
+                <form >
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input class="form-control" placeholder="First Name" type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input class="form-control" placeholder="Last Name" type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" rows="10" name="textArea" id="message"></textarea>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Submit">
                 </form>
             </div>
         </div>

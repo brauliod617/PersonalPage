@@ -1,0 +1,95 @@
+<!--
+File:          ~/bduarte/public_html/index.html
+Author:        Braulio Duarte
+Email:         Braulio_Duarte@student.uml.edu
+Title:         Student at UML, class COMP 4610 Section 201
+Assignment:    Assignment 4
+Date created:  09-15-2019
+Last Modified: 10-10-2019
+Description:   This page is the landing page for all my future assignments. Work in progress.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Braulio Duarte</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type ="text/css" href="main.css" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <!--NavBar-->
+        <nav id="navBar">
+            <a href="#aboutMeDiv">About Me</a>
+            <a href="#AssignmentsLink">Assignments</a>
+<!--            <a href="index.html" id="logoA"><img src="Images/Mylogo.png" id="myLogo"></a>-->
+            <a href="index.html" id="logo"><i class="fas fa-crow"></i></a>
+            <a href="#ContactLink">Contact</a>
+            <a href="#Portfolio" >Portfolio</a>
+        </nav>
+        <!--Background-->
+        <div id="braulio">
+            <h1 class="bg center">BRAULIO</h1>
+        </div>
+        <!--About Me-->
+        <div id="aboutMeDiv">
+            <div id="aboutMeDivTop">
+                <h3 class="center">Hello, and Welcome to my site!</h3>
+                <a name="AboutMeLink"></a>
+                <p>
+                    My name is <b>Braulio Duarte</b>, I am originally from <span class="gyb" ><b>Brazil</b></span> but I was raised
+                    in the <span class="rwb" ><b>United States of America</b></span> and have spent most of my life in Boston Massachusetts. I am a Computer
+                    Science student at the <span style="color: blue" ><b>University of Massachusetts Lowell</b></span> on my senior year. I also intern part time as a
+                    Infrastructure Software Engineer for <span style="color: blue" ><b>Wordstream</b></span>.
+                </p>
+            </div>
+            <div id="aboutMeDivBottom" class="center">
+                <img id="me" src="Images/me.png">
+                <h2 class="left h2Main">Computer Science Student</h2>
+                <h4 class="left ">@University of Massachusetts Lowell</h4>
+                <h2 class="left h2Main">Infrastructure Software Engineer Intern</h2>
+                <h4 class="left ">@Wordstream</h4>
+                <h2 class="left h2Main">Capoerista</h2>
+                <h4 class="left ">@Capoeira Rosa Rubra</h4>
+            </div>
+        </div>
+        <!--Back to top button-->
+        <div id="topButton">
+            <a href="#navBar"><img src="Images/UpArrows.png"></a>
+        </div>
+        <!--Assignments-->
+        <div id="Assignments">
+            <a name="AssignmentsLink"></a>
+            <h1><i class="fas fa-crow"></i>ASSIGNMENTS</h1>
+            <h2 class="center">Assignments will go here!</h2>
+        </div>
+        <!--Contact-->
+        <div id="Contact">
+            <a name="ContactLink"></a>
+            <div class ="topSectionContact">
+                <h2 class="center">Have any questions, feel free to contact me!</h2>
+                <form id="form" class="center">
+                    First Name:<br>
+                    <input class="formItem" type="text" name="firstName">
+                    <br>
+                    Last Name:<br>
+                    <input class="formItem" type="text" name="lastName">
+                    <br>
+                    Message:<br>
+                    <textarea class="textArea formItem" name="textArea"></textarea>
+                    <!--        <input class="formItem formMessage"  type="text" name="Message">-->
+                    <input id="input" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div id="Portfolio">
+            <h1 class="center" >Portfolio</h1>
+            <a name="PortfolioLink"></a>
+            <img class="center" id="underConstructionImage" src="images/PinClipart.com_under-construction-sign-clip_1369172.png"
+                 alt="Under Construction Image">
+        </div>
+
+        <!--My JS files-->
+        <script src="main.js" type="text/javascript" rel="script"></script>
+        <script src="https://kit.fontawesome.com/72535e3116.js"></script>
+    </body>
+</html>

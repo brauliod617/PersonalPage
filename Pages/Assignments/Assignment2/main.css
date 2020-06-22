@@ -1,0 +1,222 @@
+/*File:          ~/bduarte/public_html/main.css*/
+/*                                     Author:        Braulio Duarte*/
+/*                                     Email:         Braulio_Duarte@student.uml.edu*/
+/*Title:         Student at UML, class COMP 4610 Section 201*/
+/*Assignment:    Assignment 4*/
+/*Date created:  09-15-2019*/
+/*Last Modified: 10-10-2019*/
+/*Description:   This page is the landing page for all my future assignments. Work in progress.*/
+/*Background*/
+body{
+    background-image: url("Images/BraulioBlueWhiteBG.png");
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-color: #40b2e6;
+    min-width: 900px;
+}
+
+.bg{
+    margin: 96px;
+}
+/*end of Background Image*/
+
+/*Navbar*/
+#navBar{
+    display: flex;
+    margin-top: 10px;
+}
+/*navBar is direct parent of a*/
+/*navbar items*/
+#navBar > a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+#navBar > a:hover {
+    color: #40b2e6;
+}
+#myLogo{
+    width: 100%;
+}
+/*a which is parent of logo image.*/
+#logoA{
+    width: 65px;
+}
+/*End Navbar*/
+
+/*Side Bar*/
+.sideBar{
+    display: inline-block;
+}
+
+/*End of Side Bar*/
+
+/*TopButton*/
+#topButton  img{
+    width: 80px;
+
+
+}
+#topButton{
+    position: fixed;
+    left: 92%;
+    top: 90%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+/*End of TopButton*/
+
+
+/*Shared*/
+body{
+    overflow-x: hidden;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+h1{/*BRAULIO background*/
+    font-size: 120px;
+}
+.center{
+     text-align: center;
+ }
+/*EndShared*/
+
+/*About Me*/
+#aboutMeDiv{
+    position: absolute;
+    top: 789px;
+    left: 0px;
+
+}
+#aboutMeDivTop{
+    background-color: white;
+    padding-bottom: 30px;
+
+    min-width: 768px;
+    margin-top: -18px;
+}
+#aboutMeDivTop > p{
+    margin: 0% 25%;
+}
+#aboutMeDivTop > h3{
+    padding-top: 50px;
+}
+#me{
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 50px;
+}
+#aboutMeDivBottom{
+}
+.gyb{
+    background: -webkit-linear-gradient(left, yellow, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.rwb{
+    background: -webkit-linear-gradient(left, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*End About Me*/
+
+/*Assignments*/
+#Assignments{
+    position: absolute;
+    top: 1708px;
+    min-width: 900px;
+    right: 0;
+    left: 0;
+}
+.assignmentImg{
+    width: 58%;
+    opacity: 0.5;
+}
+
+#Assignments > h1{
+    margin-top: 51px;
+    font-size: 402%;
+    text-align: center;
+}
+#Assignments > i{
+    font-size: 90px;
+    position: relative;
+    top: -50px;
+    left: 130px;
+}
+.row{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.col{
+    display: inline-grid;
+    text-align: center;
+}
+.assignmentImg{
+    width: 400px;
+    height: 333px;
+}
+.row:nth-child(0){
+    width: 200px;
+}
+.row > div{
+    text-align: center;
+}
+a:hover .assignmentImg{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+/*End Assignments*/
+
+/*Contact*/
+#Contact{
+    top: 2300px;
+    position: relative;
+}
+#form{
+    border: 1px solid #33363b;
+    width: 500px;
+    margin: auto;
+}
+.formItem{
+    width: 500px;
+    height: 20px;
+    margin: 10px 0 10px 0;
+    border: 1px solid #33363b;
+}
+.textArea{
+    height: 400px;
+    margin-bottom: 3px;
+    resize: none;
+}
+/*End of Contact*/
+
+/*Portfolio*/
+#Portfolio{
+    position: relative;
+    top: 2600px;
+}
+#Portfolio > img{
+    width: 80%;
+}
+/*End of Portfolio*/
+
+
+/*Footer*/
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    top: 2940px;
+    width: 100%;
+    margin-right: 20px;
+}
+.fLogos{
+    height: 30px;
+}

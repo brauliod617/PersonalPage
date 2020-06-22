@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Dynamic Table 2000</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" rel="script"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js" rel="script"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+<body>
+    <div class="container limit">
+        <h1 class="text-center mt-5">Interactive Dynamic Table 2000</h1>
+        <div class="row mt-5">
+            <!--FORM-->
+            <div class="col-3">
+                <form id="tableForm">
+                    <label for="horizontal-input-1">Enter horizontal axis bounding numbers.</label>
+                    <input id="horizontal-input-1" name ="hi1" type="number" class="form-control">
+                    <small style="color:red;"></small>
+                    <div id="slider1"></div>
+
+                    <label for="horizontal-input-2"></label>
+                    <input id="horizontal-input-2" type="number" name ="hi2" class="form-control">
+                    <small style="color:red;"></small>
+                    <div id="slider2"></div>
+
+                    <label for="vertical-input-3">Enter vertical axis bounding numbers. </label>
+                    <input id="vertical-input-3" type="number" name ="vi1" class="form-control">
+                    <small style="color:red;"></small>
+                    <div id="slider3"></div>
+
+                    <label for="vertical-input-4"></label>
+                    <input id="vertical-input-4" type="number" name ="vi2" class="form-control">
+                    <small style="color: red;"></small>
+                    <div id="slider4"></div>
+
+                </form>
+                <button class="btn btn-primary mt-4" type="submit" id="saveBtn">Save Table</button>
+            </div>
+            <!--TABLE-->
+            <div class="col-8 limit" id="tableDiv">
+                <table id="table" style="margin-bottom: 0"></table>
+            </div>
+        </div>
+        <div class="row  mt-5 pb-5">
+            <button class="btn btn-primary mt-4 mb-2" type="submit" id="deleteBtn">Delete Tab</button>
+            <button class="btn btn-primary mt-4 ml-4 mb-2" type="submit" id="deleteAllBtn">Delete All Tabs</button>
+            <div id="tabs_1" class="col-12">
+                <ul id="tabs_ul">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link href="css/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+    <script src="js/main.js" rel="script" type="text/javascript"></script>
+</body>
+</html>

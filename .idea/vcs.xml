@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/Pages/Assignments/Assignment2/AssignmentEight" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Pages/Assignments/AssignmentEight" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Pages/Assignments/Etch-a-Sketch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Pages/Assignments/RockPaperScissors2.0" vcs="Git" />
   </component>
 </project>
